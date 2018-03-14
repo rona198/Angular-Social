@@ -3,7 +3,7 @@
   <span class="button is-small is-info" (click)='addHeartToNote(note.hearts)'>
     Like <i class="fa fa-thumbs-up"></i>
   </span>
-  <span class="button is-small is-info" (click)='minusHeartToNote(note.hearts)'>
+  <span class="button is-small is-info" (click)='addDisToNote(note.hearts)'>
     Dislike <i class="fa fa-thumbs-down"></i>
   </span>
   <span class="button is-small is-info" style="background: green;" (click)='updateToNote(note.hearts)'>
@@ -12,6 +12,6 @@
   <span class="button is-small is-danger" (click)='deleteNote(note?.id)'>
   	Delete <i class="fa fa-trash"></i>
   </span>  
-  <p>This post has been liked {{ note.hearts || 0 }} times.</p>
+  <p>Like: {{ note.hearts || 0 }} &emsp; Dislike: {{ note.hearts || 0 }}</p>
 </div>
  
